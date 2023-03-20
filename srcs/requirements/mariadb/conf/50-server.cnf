@@ -1,0 +1,25 @@
+#
+# These groups are read by MariaDB server.
+# Use it for optins that only the server (but not clients) should see
+#
+# See the examples of server my.cnf files in /usr/share/mysql
+
+# configration for the mysql client
+[mysql]
+default-character-set=utf8
+
+# this is only for the mysqld standalone daemon
+[mysqld]
+
+#
+# * Basic Settings
+#
+user                    = mysql
+socket                  = /run/mysqld/mysqld.sock
+port                    = 3306
+datadir                 = /var/lib/mysql
+
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+bind-address            =*
+
