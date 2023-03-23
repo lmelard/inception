@@ -1,0 +1,2 @@
+# Ignorer les fichiers lies aux cles d'API
+.env
