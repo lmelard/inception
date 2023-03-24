@@ -1,7 +1,7 @@
 FROM        debian:buster
 
 RUN         apt update
-RUN         apt upgrade
+RUN         apt upgrade -y
 RUN         apt install nginx -y 
 RUN         apt install curl -y
 RUN         apt install vim -y
