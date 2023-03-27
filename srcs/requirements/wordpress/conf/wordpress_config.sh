@@ -11,7 +11,6 @@ then
 			--dbuser=$SQL_USER \
 			--dbpass=$SQL_PASSWORD \
 			--dbhost=mariadb:3306 --path='/var/www/wordpress'
-
 	sleep 2
 
 # on configure le premier utilisateur wordpress

@@ -15,6 +15,22 @@ build:
 	@docker-compose -f srcs/docker-compose.yml build
 
 up:
-	
+	@docker-compose -f srcs/docker-compose.yml up -d
 
-.PHONY
+start:
+	@docker-compose -f srcs/docker-compose.yml start
+
+stop:
+	@docker-compose -f srcs/docker-compose.yml stop
+
+clean:
+	@docker-compose -f srcs/docker-compose.yml down -v
+
+fclean: clean
+	@sudo rm -rf /home/lmelard/data/db
+	@sudo rm -rf /home/lmelard/data/wordpress
+	@docker system prune -af 
+
+re: fclean all
+
+.PHONY: all build up start stop clean fclean re
