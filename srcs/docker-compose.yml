@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   mariadb:
-    image: mariadb
+#    image: mariadb
     container_name: mariadb
     networks:
       - inception
@@ -16,7 +16,7 @@ services:
       - "3306"
     
   wordpress:
-    image: wordpress
+#    image: wordpress
     container_name: wordpress
     networks:
       - inception
@@ -33,7 +33,7 @@ services:
       - "9000"
     
   nginx:
-    image: nginx
+#    image: nginx
     container_name: nginx
     networks:
       - inception
