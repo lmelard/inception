@@ -4,7 +4,6 @@ This project is an exploration of Docker, a powerful tool for virtualizing appli
 # Project Setup
 
 ## Requirements
-A Virtual Machine for running the Docker containers.
 Docker and Docker-compose installed on the VM.
 
 ## Services Overview
@@ -14,12 +13,17 @@ Docker and Docker-compose installed on the VM.
 - ***Volumes***: Two Docker volumes are used, one for the WordPress database and another for WordPress website files.
 - ***Docker Network***: A dedicated network for container communication.
 
+# Configuration and Launch
+- Clone the repository.
+- Navigate to the project directory.
+- Configure environment variables in the srcs/.env file.
+- Run the Makefile to build and start the Docker containers:
+
 ```
-  $ git clone https://github.com/clemedon/inception
-  $ cd inception
-  $ make
-  $ firefox <login>.42.fr
+make
 ```
+Access the NGINX server via https://<your_domain_name>.
+
 
 ![Diagram](inception_diagram.png)
 
