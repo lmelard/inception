@@ -18,7 +18,7 @@ Docker and Docker-compose installed on the VM.
   $ git clone https://github.com/clemedon/inception
   $ cd inception
   $ make
-  $ firefox inception.fr
+  $ firefox <login>.42.fr
 ```
 
 ![Diagram](inception_diagram.png)
